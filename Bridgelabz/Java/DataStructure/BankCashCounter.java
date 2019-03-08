@@ -1,7 +1,14 @@
 package com.Bridgelabz.DataStructure;
 
 import java.util.Scanner;
-
+/**
+ * @problem statement :  Create a Program which creates Banking Cash Counter where people come in
+   		to deposit Cash and withdraw Cash. Have an input panel to add people to Queue to either deposit
+  		or withdraw money and dequeue the people. Maintain the Cash Balance.
+ * @author sandhyarani
+ * @version 1.0
+ * @date 5/03/2019 
+*/
 public class BankCashCounter {
 	 
 		public static void main(String args[])
