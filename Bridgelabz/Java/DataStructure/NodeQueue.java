@@ -1,9 +1,16 @@
 package com.Bridgelabz.DataStructure;
 
-class NodeQueue {
+class NodeQueue<T> {
 	protected int data;
 	protected NodeQueue link;
+	
 
+
+	  NodeQueue(int val)
+	  {
+	    data = val;
+	    link = null;
+	}
 	/* Constructor */
 	public NodeQueue() {
 		link = null;

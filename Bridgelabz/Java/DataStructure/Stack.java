@@ -3,14 +3,27 @@ package com.Bridgelabz.DataStructure;
 /******************************************************************************
  * Purpose: Implementation of Stack with its common operation
  *
- * @author 
+ * @author sandhyarani
  * @version 1.0
- * @since 27-02-2019
+ * @since 28-02-2019
  *
  ******************************************************************************/
 
+class Stack<T>
+{
+	
 
-public class Stack<T> {
+  StackNode head;
+  int stackSize;
+
+  Stack()
+  {
+
+    head = null;
+    stackSize = 0;
+
+  }
+
 	/**
 	 * the variable used to init capacity of stack array
 	 */
@@ -45,9 +58,10 @@ public class Stack<T> {
 	 * 
 	 * @return return the first value inserted or null if stack is empty
 	 */
+	
 	public T pop() {
 		if (isEmpty()) {
-			System.err.println("cant pop , stack is empty");
+			//System.err.println("stack is empty");
 			return null;
 		} else {
 			T data = (T) stack[--top];
@@ -107,5 +121,51 @@ public class Stack<T> {
 		sb.append("}");
 		return sb.toString();
 	}
+	
+	  void push(int val)
+	  {
+	    StackNode newNode = new StackNode(val);
+	    newNode.link = head;
+	    head = newNode;
+	    stackSize++;
+	  }
+	 
+	  void displayStack()
+	  {
+	    if(stackSize == 0)
+	      {
+	        System.out.println("Empty Stack");
+	        return ;
+	      }
+	    StackNode temp = head;
+
+	    while(temp != null)
+	    {
+	      System.out.println(temp.data);
+	      temp = temp.link;
+	    }
+	  }
+
+	  int searchQueue(int val)
+	  {
+	    StackNode temp = head;
+
+	    if(temp.data == val)
+	      {
+	        //System.out.println(val+" is an Anagram");
+	        return 1;
+	      }
+	    while(temp.link != null && temp.data != val)
+	    {
+	      temp = temp.link;
+	    }
+	    if(temp.data == val)
+	      {
+	        //System.out.println(val+" is an Anagram");
+	        return 1;
+	      }
+	    return 0;
+	  }
+	 
 
 }

@@ -1,47 +1,60 @@
 package com.Bridgelabz.DataStructure;
-
+/**
+ * @problem statement : A pallindrome is a string that reads the same forward and backward, 
+  	We would like to construct an algorithm to input a string of characters and 
+  	check whether it is a pallindrome or not.
+ * @author sandhyarani
+ * @version 1.0
+ * @date 3/03/2019 
+ */
 import java.util.Scanner;
-import java.util.concurrent.DelayQueue;
+
 
 public class DequePallindrome {
-
-	static void ispallindrom(DequueUtility<Character> dq) {
-		boolean b;
-		if (dq.size() % 2 == 0) {
-		b=true;
-			while (dq.size() != 0) {
-				char c = dq.removeFront();
-				char c2 = dq.removeRear();
+	/**
+	 * Function to check given string is pallindrome or not
+	 * @param dequeue
+	 * @return true or false
+	 */
+	static boolean ispallindrom(Dequue<Character> dequeue) {
+		
+		if (dequeue.size() % 2 == 0) {
+		
+			while (dequeue.size() !=0) {
+				char c = dequeue.removeFront();
+				char c2 = dequeue.removeRear();
 				if (c != c2) {
 					System.out.println();;
-					b=false;
-					break;
+					return false;
+				
 				}
 			}
 		} else {
-			while (dq.size() == 1) {
-				char c = dq.removeFront();
-				char c2 = dq.removeRear();
+			while (dequeue.size() == 1) {
+				char c = dequeue.removeFront();
+				char c2 = dequeue.removeRear();
 				if (c != c2) {
-				b=true;
-				break;
+				return true;
+		
 				}
 			}
 			
 		}
-		//return true;
+		return true;
 	}
-
+	//main function 
 	public static void main(String[] args) {
-		Scanner s = new Scanner(System.in);
+		Scanner scanner = new Scanner(System.in);
 		System.out.println("enter a string");
-		String s1 = s.nextLine();
-		DequueUtility<Character> dq = new DequueUtility<>();
+		String s1 = scanner.nextLine();
+		Dequue<Character> deqeue = new Dequue<>();
 		int i = 0;
-		while (i < s1.length()) {
-			dq.addRear(s1.charAt(i++));
+		while (i <s1.length()) {
+			deqeue.addRear(s1.charAt(i++));
 		}
-		System.out.println(dq + " " + dq.size());
-		ispallindrom(dq);
+		System.out.println(ispallindrom(deqeue));
+		System.out.println(deqeue + " ");
+		scanner.close();
+	
 }
 }
