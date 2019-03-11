@@ -146,26 +146,7 @@ class Stack<T>
 	    }
 	  }
 
-	  int searchQueue(int val)
-	  {
-	    StackNode temp = head;
-
-	    if(temp.data == val)
-	      {
-	        //System.out.println(val+" is an Anagram");
-	        return 1;
-	      }
-	    while(temp.link != null && temp.data != val)
-	    {
-	      temp = temp.link;
-	    }
-	    if(temp.data == val)
-	      {
-	        //System.out.println(val+" is an Anagram");
-	        return 1;
-	      }
-	    return 0;
-	  }
+	 
 	 
 
 }
