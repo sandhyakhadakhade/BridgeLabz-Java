@@ -1,0 +1,115 @@
+{
+    "Doctor": [
+    {
+    "Name": "Dr.Sahana",
+    "Id": "SAT",
+    "Specialisation": "Cardiologist",
+    "noOfPatient":0,
+    "Availability": "AM"
+    },
+    {
+    "Name": "Dr.Arjun",
+    "Id": "H2o",
+    "Specialisation": "Neurologist",
+    "noOfPatient":0,
+    "Availability": "Both"
+    },
+    {
+    "Name": "Dr.Supriya",
+    "Id": "NAN",
+    "Specialisation": "Ophthalmologist ",
+    "noOfPatient":0,
+    "Availability": "Both"
+    },
+    {
+    "Name": "Dr.Aish",
+    "Id": "SWAN",
+    "Specialisation": "Gynacologist",
+    "noOfPatient":0,
+    "Availability": "PM"
+    }
+    ],
+    "Patient": [
+    {
+    "Name": "Vishal",
+    "Id": "muk",
+    "PhoneNumber": 7874545455,
+    "Age": 28,
+    "AppointmentFrom": "Dr.Sahana",
+    "OnTheDayOf": 8
+    },
+    {
+    "Name": "Anu",
+    "Id": "AB",
+    "PhoneNumber": 7020111245,
+    "Age": 40,
+    "AppointmentFrom": "Dr.Aish",
+    "OnTheDayOf": 9
+    },
+    {
+    "Name": "Anush",
+    "Id": "P002",
+    "PhoneNumber": 8899662277,
+    "Age": 47,
+    "AppointmentFrom": "Dr.Arjun",
+    "OnTheDayOf": 10
+    },
+    {
+    "Name": "Jeevi",
+    "Id": "1900",
+    "PhoneNumber": 7026154214,
+    "Age": 119,
+    "AppointmentFrom": "Dr.Sahana",
+    "OnTheDayOf": 11
+    },
+    {
+    "Name": "Deepti",
+    "Id": "2772",
+    "PhoneNumber": 7815287548,
+    "Age": 30,
+    "AppointmentFrom": "Dr.Supriya",
+    "OnTheDayOf": 12
+    },
+    {
+    "Name": "Bhavana",
+    "Id": "8338",
+    "PhoneNumber": 8970253512,
+    "Age": 22,
+    "AppointmentFrom": "Dr.Sahana",
+    "OnTheDayOf": 13
+    },
+    {
+    "Name": "Adi",
+    "Id": "1223",
+    "PhoneNumber": 7815454554,
+    "Age": 22,
+    "AppointmentFrom": "Dr.Arjun",
+    "OnTheDayOf": 14
+    },
+    {
+    "Name": "Chandu",
+    "Id": 23625,
+    "PhoneNumber": 9876543210,
+    "Age": 22,
+    "AppointmentFrom": "Dr.Supriya",
+    "OnTheDayOf": 16
+    },
+    {
+    "Name": "Chinni",
+    "Id": 34541,
+    "PhoneNumber": 1231231231,
+    "Age": 22,
+    "AppointmentFrom": "Dr.Sahana",
+    "OnTheDayOf": 16
+    },
+    {
+    "Name": "Lux",
+    "Id": 90098,
+    "PhoneNumber": 9696969696,
+    "Age": 42,
+    "AppointmentFrom": "Dr.Arjun",
+    "OnTheDayOf": 17
+    }
+    ]
+   }
+   

@@ -1,0 +1,40 @@
+{
+    "Person": [
+        {
+            "Name": "Jeevi",
+            "LastName": "C",
+            "Address": {
+                "Street": "22",
+                "City": "Bangalore",
+                "State": "Karnataka",
+                "Nationality": "Indian",
+                "Zip": "560060",
+                "PhoneNum": "8705932512"
+            }
+        },
+        {
+            "Name": "Aishwitha",
+            "LastName": "Gowda",
+            "Address": {
+                "Street": "21",
+                "City": "Hassan",
+                "State": "Karnataka",
+                "Nationality": "Indian",
+                "Zip": "402010",
+                "PhoneNum": "9010412563"
+            }
+        },
+        {
+            "Name": "Aishwarya",
+            "LastName": "rowdyBaby",
+            "Address": {
+                "Street": "27",
+                "City": "Bangalore",
+                "State": "Karnataka",
+                "Nationality": "Indian",
+                "Zip": "402010",
+                "PhoneNum": "7411487048"
+            }
+        }
+    ]
+}
